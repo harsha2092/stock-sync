@@ -8,7 +8,7 @@ def upload_bse(dateToDownload):
     newCsvFileName = "BSE_EQ_ISINCODE_"+ dateToDownload + ".csv"
     urlToDowndoad = "https://www.bseindia.com/download/BhavCopy/Equity/" + zipFileToDownload
     # fileToUpload = "C:/personal/documents/finance/share market/BSE/BSE_EQ_ISINCODE_270520.csv"
-    folderToWriteTo = "C:/personal/documents/finance/share market/BSE/" 
+    folderToWriteTo = "./bse/" 
     zipFileToWriteTo = folderToWriteTo + zipFileToDownload
     extractedcsvFileCompletePath = folderToWriteTo + csvFileToExtract
     newFileCompletePath = folderToWriteTo + newCsvFileName 

@@ -16,11 +16,10 @@ def upload_nse(dateToDownload):
     # https://www1.nseindia.com/content/historical/EQUITIES/2020/MAY/cm27MAY2020bhav.csv.zip
     # https://www1.nseindia.com/content/historical/EQUITIES/2020/JUN/cm01JUN2020bhav.csv.zip
     urlToDowndoad = "https://www1.nseindia.com/content/historical/EQUITIES/" + str(date_obj.year) + "/" + months[date_obj.month-1]+ "/" +zipFileToDownload
-    folderToWriteTo = "C:/personal/documents/finance/share market/NSE/" 
+    folderToWriteTo = "./nse/" 
     zipFileToWriteTo = folderToWriteTo + zipFileToDownload
     extractedcsvFileCompletePath = folderToWriteTo + csvFileToExtract
     newFileCompletePath = folderToWriteTo + newCsvFileName 
-
 
     metaDataToDownloadFile = {
         'urlToDowndoad': urlToDowndoad,

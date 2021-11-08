@@ -1,0 +1,20 @@
+CREATE TABLE bse_daily_trade (
+    security_code VARCHAR ( 50 ),
+    security_id VARCHAR ( 50 ),
+    equity_group VARCHAR ( 50 ),
+    SC_TYPE VARCHAR ( 50 ),
+    open decimal,
+    high decimal,
+    low decimal,
+    close decimal,
+    last decimal,
+    prev_close decimal,
+    no_trades bigint,
+    no_of_shares bigint,
+    net_turnover decimal,
+    tdcloindi VARCHAR(50),
+    isin_no VARCHAR(50),
+    trading_date DATE,
+    filler2 VARCHAR (50),
+    filler3 VARCHAR (50)
+);
